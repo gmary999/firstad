@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="student_photoport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/student_photo/static/bootstrap513/css/bootstrap.css">
+		<script src="/student_photo/static/bootstrap513/js/bootstrap.bundle.min.js"></script>
+		<script src="/student_photo/static/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+		<title>第一个实例1.02版</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-white" style="background-color: #198754;">
+					<div style="margin: 10px;">
+						<span style="margin: 15px auto 15px 20px; font-size: 1.7em;">2023年秋季 小学部已拍照学生清单</span>
+						<span style="margin: 20px; font-size: 1em;">最近更新：{{ update_time }}</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-black" style="background-color: #E9ECEF;">
+					<nav class="navbar navbar-expand-sm  navbar-light">
+						<ul class="navbar-nav">
+							
+							<li class="nav-item ">
+							      <a class="nav-link" href="{{ url_for('student_photo.myclass') }}" >返回首页</a>
+							</li>
+								
+						</ul>
+					</nav>
+					
+					
+		
+				</div>
+				
+				
+					
+				
+				
+				
+			</div>
+			
+			<!--content-->
+			{% block content %}{% endblock %}
+			
+		</div>
+	</body>
+</html>
